@@ -48,7 +48,7 @@ def binary_search(sorted_list, target):
         mid = (low + high) // 2
 
         if sorted_list[mid] == target:
-            return mid
+            return mid 
         elif sorted_list[mid] < target:
             low = mid + 1
         else:
@@ -56,4 +56,4 @@ def binary_search(sorted_list, target):
 
     return -1 # returning -1 is convention for unsuccessful search, since the target will never be a negative index
 
-print(binary_search(my_list, 76))
+print(binary_search(my_list, target))
